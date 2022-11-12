@@ -1,0 +1,74 @@
+/* You can add global styles to this file, and also import other style files */
+@import 'https://fonts.googleapis.com/icon?family=Material+Icons';
+
+$primary: rgb(255, 180, 0);
+$background: #F2F2F4;
+
+* {
+  font-family: 'Poppins', sans-serif;
+  
+  padding: 0;
+  margin: 0;
+  box-sizing: 0;
+}
+
+html {
+  @media (max-width: 1080px) {
+    font-size: 93.75%;
+  }
+
+  @media (max-width: 720px) {
+    font-size: 87.5%;
+  }
+}
+
+body {
+  background: $background;
+  --webkit-font-smoothing: antialiased;
+}
+
+body,
+input,
+textarea,
+button {
+  font-weight: 400;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 700;
+}
+
+button {
+  cursor: pointer;
+  &:hover {
+      opacity: 0.8;
+  }
+}
+
+[disabled] {
+  opacity: 0.6;
+  cursor: not-allowed;
+}
+
+.btn-primary {
+  background: $primary;
+  border: none;
+  border-radius: 2px;
+  color: #fff;
+  padding: 10px 15px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.btn-outline {
+  @extend .btn-primary;
+  background: transparent;
+  border: 1px solid $primary;
+  color: $primary;
+}
+html, body { height: 100%; }
+body { margin: 0; font-family: Roboto, "Helvetica Neue", sans-serif; }
